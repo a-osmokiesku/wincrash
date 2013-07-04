@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Wincrash by i-am-a-kernel</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Wincrash</h1>
+        <h2>Приложение демонстрирующее уязвимость в ОС Windows</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/i-am-a-kernel/wincrash/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/i-am-a-kernel/wincrash/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/i-am-a-kernel/wincrash" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a name="---github---wincrash-" class="anchor" href="#---github---wincrash-"><span class="octicon octicon-link"></span></a>Добро пожаловать на GitHub страницу проекта wincrash .</h3>
+
+<p>Однажды один знакомый рассказал мне про одну уязвимость в Windows. А именно из-за нее можно легко вызвать синий экран смерти шестью строчками кода на Си. Причем программа не требует никаких прав администратора и вызывает только одну функцию масштабирования окна.</p>
+
+<p><img src="http://habrastorage.org/storage2/46d/2f0/662/46d2f0662170306373942a7dfb0918f6.jpg" alt="Blue Screen"></p>
+
+<h3>
+<a name="-" class="anchor" href="#-"><span class="octicon octicon-link"></span></a>Немного теории</h3>
+
+<p>В случае недопустимой инструкции процессор бросает исключение, а ОС уже сама решает, что с этим делать. Если это ошибка в программе и она никак не обрабатывается, то система выдает всем известное сообщение о том, что прекращена работа программы.
+Если же выполняется недопустимая инструкция в ядре системы, то все немного интереснее: мы увидим синий экран.</p>
+
+<h3>
+<a name="--1" class="anchor" href="#--1"><span class="octicon octicon-link"></span></a>О программе</h3>
+
+<p>Данный проект заключает в себе сам модуль который "роняет" операционную систему, и оболочку которая позволяет удобно им пользоваться, а также службу windows которая будет "ронять" многострадальную ось при каждой загрузке (если конечно вы захотите). С кодом подробнее вы можете подробнее ознакомиться в репозитории.</p>
+
+<h3>
+<a name="ps" class="anchor" href="#ps"><span class="octicon octicon-link"></span></a>P.S.</h3>
+
+<p>16 мая 2013 года эта уязвимость была наконец-то закрыта обновлением ядра Windows которое можно загрузить по этой <a href="https://technet.microsoft.com/en-us/security/bulletin/ms13-046">ссылке</a></p>
+
+<hr><h3>
+<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>Контакты</h3>
+
+<p>В случае необходимости вы можете связаться со мной с помощью e-mail:<a href="mailto:artur.osmokesku@outlook.com">artur.osmokesku@outlook.com</a>
+Приложение предоставляется как есть по лицензии GPLv2.0 автор не несет ни какой ответственности за нанесенный ущерб приложением или кодом.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
